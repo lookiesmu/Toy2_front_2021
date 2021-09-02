@@ -1,13 +1,19 @@
 package com.example.myapplication.todo
 
-class plan(var content: String, var isDone : Boolean = false) {
+import java.io.Serializable
+
+class plan(var content: String, var status : Boolean = false) : Serializable{
 
 }
 
 class planlist() {
-    val planlist = ArrayList<plan>()
+    val Planlist = ArrayList<plan>()
 
     fun addPlan(plan: plan) {
-        planlist.add(plan)
+        Planlist.add(plan)
     }
+}
+
+class todo_class(var content: String) : Serializable{
+
 }

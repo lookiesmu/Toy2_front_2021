@@ -1,7 +1,7 @@
 package com.example.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -29,14 +29,14 @@ class BottomNavigation : AppCompatActivity() {
         bottom_menu.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item ->
             //하단 메뉴바 아이콘에 따라 화면 이동
             when (item.itemId) {
-                R.id.todo -> {
-                    //supportFragmentManager.beginTransaction().replace(R.id.main_container, !!).commit()
-                    //return@OnNavigationItemSelectedListener true
-                }
-                R.id.home -> {
-                    //supportFragmentManager.beginTransaction().replace(R.id.main_container, !!).commit()
-                    //return@OnNavigationItemSelectedListener true
-                }
+//                R.id.todo -> {
+//                    supportFragmentManager.beginTransaction().replace(R.id.main_container, Todo_main!!).commit()
+//                    return@OnNavigationItemSelectedListener true
+//                }
+//                R.id.home -> {
+//                    supportFragmentManager.beginTransaction().replace(R.id.main_container, !!).commit()
+//                    return@OnNavigationItemSelectedListener true
+//                }
                 R.id.friend -> {
                     supportFragmentManager.beginTransaction().replace(R.id.main_container, Friend_MainActivity!!).commit()
                     return@OnNavigationItemSelectedListener true
